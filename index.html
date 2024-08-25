@@ -1,26 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+                       <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font awesome cdn-->
+  <script src="https://kit.fontawesome.com/19fb4af331.js" crossorigin="anonymous"></script>
                          <!--Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-                           <!-- Tailwind CSS -->
+<style>
+    .font-manrope {
+    font-family: "Manrope", sans-serif;
+   }
+   
+</style>
+                        <!-- Tailwind CSS -->
 <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
             clifford: '#da373d',
-          }
-        }
-      }
+            'green-bg':'#ABEF5F',
+            'whole':'#FFFFFF',
+          },
+        },
+      },
     }
   </script>
 </head>
-<body>
-    
+<body class="font-manrope bg-whole">
+    <header class="md:container mx-auto my-5 lg:px-20">
+        <nav>
+            <div class="navbar bg-whole">
+              <div class="navbar-start">
+                <i class="fa-solid fa-square-up-right text-xl bg-green-bg rounded-full px-2 py-1 " ></i>
+                
+                <a class="btn btn-ghost text-3xl font-extrabold">Rinterio</a>
+              </div>
+          
+              <div class="navbar-center hidden lg:flex text-black-100 opacity-90">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+          
+              <!-- This is the modified navbar-end for larger devices and dropdown for small devices -->
+              <div class="navbar-end gap-5">
+                <!-- Dropdown for small devices, hidden on larger devices -->
+                <div class="dropdown lg:hidden dropdown-left">
+                  <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow menu-">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Icons and button, hidden on small devices -->
+                <div class="hidden lg:flex gap-5 ">
+                  <div class="mt-2 flex gap-10">
+                    <i class="fa-solid fa-magnifying-glass text-xl "></i>
+                  <i class="fa-solid fa-cart-arrow-down text-xl"></i>
+                  </div>
+                  <a class="btn bg-green-bg text-black font-extrabold text-base rounded-full">
+                    Book Consult
+                    <i class="fa-solid fa-square-up-right text-xl"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
