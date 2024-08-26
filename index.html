@@ -28,19 +28,21 @@
             clifford: '#da373d',
             'green-bg':'#ABEF5F',
             'whole':'#FFFFFF',
+            'color-2':'rgb(30, 30, 30)',
+            'green-light':'rgba(171, 239, 95, 0.5);',
           },
         },
       },
     }
   </script>
 </head>
-<body class="font-manrope bg-whole">
-    <header class="md:container mx-auto my-5 lg:px-20">
+<body class="font-manropee">
+    <header class="md:container mx-auto my-5 lg:px-20  bg-whole">
         <nav>
             <div class="navbar bg-whole">
               <div class="navbar-start">
-                <i class="fa-solid fa-square-up-right text-xl bg-green-bg rounded-full px-2 py-1 " ></i>
-                
+                <!-- <i class="fa-solid fa-square-up-right text-xl bg-green-bg rounded-full px-2 py-1 " ></i> -->
+                <i class="fa-solid fa-arrow-right -rotate-45 text-black bg-green-bg rounded-full px-2 py-2"></i>
                 <a class="btn btn-ghost text-3xl font-extrabold">Rinterio</a>
               </div>
           
@@ -75,12 +77,13 @@
                 <!-- Icons and button, hidden on small devices -->
                 <div class="hidden lg:flex gap-5 ">
                   <div class="mt-2 flex gap-10">
-                    <i class="fa-solid fa-magnifying-glass text-xl "></i>
-                  <i class="fa-solid fa-cart-arrow-down text-xl"></i>
+                    <i class="fa-solid fa-magnifying-glass text-xl  bg-white-500 rounded-full px-3 py-1"></i>
+                  <i class="fa-solid fa-cart-arrow-down text-xl bg-white-500 rounded-full px-3 py-1 "></i>
                   </div>
                   <a class="btn bg-green-bg text-black font-extrabold text-base rounded-full">
                     Book Consult
-                    <i class="fa-solid fa-square-up-right text-xl"></i>
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full px-2 py-2"></i>
+                    <!-- <i class="fa-solid fa-square-up-right text-xl"></i> -->
                   </a>
                 </div>
               </div>
@@ -92,14 +95,54 @@
                 <img src="assets/banner.png" alt="" class="my-10">
                 <h1 class="text-5xl text-center font-extrabold my-10">A barn house of this design has a <br>striking appearance</h1>
                 <p class="text-xs text-center"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.</p>
-                <a class="btn bg-green-bg text-black font-extrabold text-base rounded-full opacity-70 items-center my-7">
+                <a class="btn bg-green-light text-black font-extrabold text-base rounded-full  items-center my-7">
                   View Details
-                    <i class="fa-solid fa-square-up-right text-xl"></i>
+                  <i class="fa-solid fa-arrow-right -rotate-45 text-black bg-green-bg rounded-full px-2 py-2"></i>
                   </a>
             </div>
         </section>
     </header>
-    <main></main>
+    <main  class="md:container mx-auto">
+                         <!-- page-02 -->
+        <section class="bg-color-2">
+            <div class="hero bg-base-200 min-h-screen">
+                <div class="hero-content flex-col   lg:flex-row-reverse ">
+                  <img
+                    src="assets/Rectangle.png"
+                    class="w-1/2 rounded-lg shadow-2xl " />
+                  <div class="">
+                    <img src="assets/Vector.png" alt="" class="relative  left-0 " >
+                    <a class="btn btn-xs lg:m-70">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        About Us
+                        </a>
+                    <h1 class="text-5xl font-extrabold">We design thoughtful, <br> liveable spaces </h1>
+                    <p class="py-6 text-sm">
+                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <!-- card-1 -->
+                <div class="flex rounded-2xl bg-[#FFFFFF]  shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)] my-4">
+                    <img src="assets/commercial.png" alt=""  class="ml-5 w-20 h-20 mt-5">
+                    <div class="ml-5">
+                      <h2 class="text-3xl font-bold text-[#363958] pb-3 text-lg mt-4">Commercial</h2>
+                    <p class="font-roboto text-xs text-gray-700 pb-5">Transform your business with a commercial barn house—where rustic charm <br> meets modern functionality. Elevate your space with a unique blend of style and practicality</p>
+                    </div>
+                  </div>
+                    <!-- card-2 -->
+                <div class="flex rounded-2xl bg-[#FFFFFF]  shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)] my-4">
+                    <img src="assets/residential.png" alt=""  class="ml-5 w-20 h-20 mt-5">
+                    <div class="ml-5">
+                      <h2 class="text-3xl font-bold text-[#363958] pb-3 text-lg mt-4">Residential</h2>
+                    <p class="font-roboto text-xs text-gray-700 pb-5">Experience the perfect blend of rustic charm and cozy living with a <br> residential barn house. Your dream home, where timeless design meets modern comfort.</p>
+                    </div>
+                  </div>
+                    
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
