@@ -34,6 +34,8 @@
             'yellow':'#EFDA6E',
             'green':'#A4DAC3',
             'blue':'#77AAEA',
+            'fot':'#1C1C1C', 
+            'ture': "url('/assetes/bg.png')",
           },
         },
       },
@@ -318,8 +320,53 @@
           </section>
                   
        <!-- -----------------form part------ -->
-
+       <section class="w-full">
+        <div class="bg-cover bg-center h-screen" style="background-image: url(./assets/bg.jpg);">
+            <div class="flex justify-center pb-5 pt-20">
+                <button class="btn btn-xs bg-green-light">
+                    <i class="fa-solid fa-arrow-right"></i>
+                   Let's Connect
+                </button>
+            </div>
+            <div class="text-center text-black">
+                <h1 class="text-4xl lg:text-5xl font-extrabold">Let's Discuss Your Next Project</h1>
+                <p class="py-6 text-sm px-5">Let's bring your barn house vision to life—start by filling out our form to discuss your next project. Together,<br> we'll craft a space that perfectly blends rustic charm with modern luxury.</p>
+            </div>
+            <!--  -->
+            <div class="items-center">
+              <form action="">
+                <input type="text"placeholder="First Name">
+              </form>
+            </div>
+        </div>
+        
+    </section>
+    
     </main>
-    <footer></footer>
+    <footer class="footer footer-center bg-base-200 text-base-content rounded p-10 bg-fot text-white">
+      <div>
+        
+        <a class="btn btn-ghost text-xl font-extrabold ">
+          <i class="fa-solid fa-arrow-right -rotate-45 text-black bg-green-bg rounded-full px-2 py-2 "></i>
+         <span class="text-3xl">Rinterio</span> </a>
+         <p class="text-sm text-center text-gray-500 tracking-wider">Embrace the perfect fusion of rustic elegance <br>and modern  luxury with our barn house designs. Redefine your living space with unparalleled craftsmanship and timeless appeal.</p>
+      </div>
+      <nav class="grid grid-cols-1 lg:grid-flow-col gap-5 lg:gap-24 text-xl">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Services</a>
+        <a class="link link-hover">Portfolio</a>
+        <a class="link link-hover">Blogs</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav>
+      <nav>
+       
+      <aside>
+        <a class="btn bg-green-bg text-black font-extrabold text-base rounded-full">
+          Book Consult
+          <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full px-2 py-2"></i>
+          <!-- <i class="fa-solid fa-square-up-right text-xl"></i> -->
+        </a>
+      </aside>
+    </footer>
 </body>
 </html>
